@@ -1,0 +1,35 @@
+@media (min-width:320px) and (max-width:767px){
+    header{
+        padding: 28px 24px;
+    }
+    header h1 a{
+        width: 88px;
+        height: 24px;
+        background-size: 88px,24px;
+    }
+    .signin .lang{
+        width: 62px;
+        margin-right: 8px;
+    }
+    .signin .lang span{
+        display: none;
+    }
+    .intro{
+        height: 100vh;
+    }
+    section .start{
+        position: relative;
+        display: block;
+    }
+    section .start input[type=email]{
+        width: 356px;
+        height: 46px;
+    }
+    section .start span{
+        font-size: 16px;
+        position: absolute;
+        left: 15px;
+        top: 25%;
+        transform: translateY(-50%);
+    }
+}

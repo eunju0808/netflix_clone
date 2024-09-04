@@ -1,0 +1,326 @@
+@charset "utf-8";
+body{
+    background: #000;
+    color: #fff;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 68px;
+    box-sizing: border-box;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+header h1 a{
+    width: 150px;
+    height: 41px;
+    background: url(../images/netflix_logo.png) no-repeat;
+    display: block;
+    text-indent: -99999px;
+}
+.signin a{
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.signin .lang{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 120px;
+    margin-right: 24px;
+}
+.signin .lang .fa-globe{
+    margin-right: 8px;
+}
+.signin .lang .fa-sort-down{
+    vertical-align: top;
+    margin: 5px 0 0 8px;
+}
+.signin .login{
+    width: 74px;
+    background: #e50913;
+}
+.intro{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    border-bottom: 8px solid #222;
+    background: url(../images/KR-ko-20240429-POP_SIGNUP_TWO_WEEKS-perspective_WEB_e969cb3e-6c59-41db-82f3-8f4aa5209d72_large.jpg) no-repeat;
+}
+.intro:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.intro .title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.intro .title h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+.intro .title h3{
+    font-size: 24px;
+    margin: 28px 0 34px 0;
+}
+.intro .title p{
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+section .start{
+    position: relative;
+    display: inline-block;
+}
+section .start input[type=email]{
+    border: 1px solid #fff;
+    width: 400px;
+    height: 54px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+section .start span{
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 요소를 무시하는 css */
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+section .start button{
+    width: 176px;
+    height: 54px;
+    background: #e50913;
+    border: 1px solid #e50913;
+    font-size: 24px;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+section .start input[type=email]:focus + span{
+    font-size: 12px;
+    transform: translateY(-25px);
+}
+section{
+    width: 100%;
+    border-bottom: 8px solid #222;
+}
+section .inner{
+    width: 1467px;
+    height: 685px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .desc h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+section .desc p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-top: 16px;
+}
+.tv .inner .tv_inner .img{
+    position: relative;
+}
+.tv .inner .tv_inner .video{
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    top: 50%;
+    margin-top: -140px;
+    /* transform: translate(-50%,-50%); */
+    z-index: -1;
+}
+.offline .inner .img{
+    position: relative;
+}
+.offline .inner .img .top_img{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.anywhere .inner .tv_inner .img{
+    position: relative;
+    overflow: hidden;
+}
+.anywhere .inner .tv_inner .video{
+    width: 393px;
+    height: 221px;
+    position: absolute;
+    left: 120px;
+    top: 51px;
+    z-index: -1;
+}
+.anywhere .inner .tv_inner .video video{
+    width: 100%;
+    height: 100%;
+}
+.qna .inner{
+    height: 100%;
+    padding: 75px 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: start;
+}
+.qna .inner h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.qna .inner .list{
+    margin-top: 34px;
+    width: 100%;
+}
+.qna .inner .list li{
+    width: 100%;
+    position: relative;
+}
+.qna .inner .list li>a{
+    width: 100%;
+    background: #2d2d2d;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+.qna .inner .list li>a:hover{
+    background: #414141;
+}
+.qna .inner .list li>a::before{
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.qna .inner .list li>a::after{
+    content: '';
+    position: absolute;
+    right: 44px;
+    top: 50%;
+    width: 2px;
+    height: 30px;
+    margin-top: -14px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.qna .inner .list li>a.on::before{
+    content: '';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    rotate: 45deg;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.qna .inner .list li>a.on::after{
+    content: '';
+    position: absolute;
+    right: 44px;
+    top: 50%;
+    width: 2px;
+    height: 30px;
+    margin-top: -14px;
+    rotate: 45deg;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.qna .inner .qna_start{
+    text-align: center;
+}
+.qna_start h3{
+    font-size: 20px;
+    margin: 50px 0 20px;
+}
+.qna .inner .list li .depth2{
+    width: 100%;
+    background: #2d2d2d;
+    margin-top: -9px;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+.qna .inner .list li .depth2 p{
+    line-height: 32px;
+}
+.qna .inner .list li .depth2 span>a{
+    display: block;
+    text-decoration: underline;
+    color: #fff;
+    margin-top: 43px;
+}
+footer{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+}
+footer .inner{
+    width: 1467px;
+    margin: 0 auto;
+    padding: 68px 0;
+}
+footer .inner .sitemap h4{
+    font-size: 14px;
+}
+footer .inner a{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+}
+footer .inner .sitemap .ul_wrap{
+    margin-top: 30px;
+    display: flex;
+    gap: 255px;
+}
+footer .inner .ul_wrap ul li a{
+    line-height: 36px;
+    font-size: 12px;
+}
+footer .inner .copy{
+    margin-top: 30px;
+}
+footer .inner .copy p{
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 16px;
+}
